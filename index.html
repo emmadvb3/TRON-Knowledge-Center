@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Knowledge Center Page</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_alt" />
+</head>
+
+<body> 
+<!-- Page heading -->
+<div class="Page-Heading">
+    <div>
+       <h1 id="Knowledge-Center">Knowledge Center</h1>
+    </div> 
+    </div>
+
+<!-- What is TRON -->
+<div class="Hero-Container">
+    <div class="Hero-Left">
+        <h2 id="Tron-Header"> What is TRON? </h2>
+        <p id="About-Text">TRON stands for TRansformative Orchestration for Networks, an automation platform for the Disney Global Network. TRON simplifies network services by understanding how to merge disparate systems to fulfill business requests. TRON transforms the DGN into a self-service network</p>
+    </div>
+        
+   
+    <div id="Button-Group">
+         <!-- This was another option i had for buttons with links using html and css only
+        <a href = "https://href:google.com" class="button"> Tron Quick Start Up Guide 
+            <img id=Arrow-Icon src="./Arrow 1.png" alt="right pointing arrow"/></a>
+        
+        <a href = "https://href:google.com" class="button"> Release Notes
+            <img id=Arrow-Icon src="./Arrow 1.png" alt="right pointing arrow"/></a>    
+
+        <a href = "https://href:google.com" class="button"> Request Access to TRON
+           <img id=Arrow-Icon src="./Arrow 1.png" alt="right pointing arrow"/></a>  
+           
+        <a href = "https://href:google.com" class="button"> User Guides
+            <img id=Arrow-Icon src="./Arrow 1.png" alt="right pointing arrow"/></a> 
+            Below is how i did buttons and links using JavaScript. 
+         -->
+         <button class="button" onclick="overviewLink()">TRON Overview
+            <img class=Arrow-Icon src="./Arrow 1.svg" alt="right pointing arrow"/>
+         </button>
+
+         <button class="button" onclick="releaseNotesLink()">Release Notes
+            <img class=Arrow-Icon src="./Arrow 1.svg" alt="right pointing arrow"/>
+         </button>
+
+         <button class="button" onclick="requestAccessLink()">Request Access to TRON
+            <img class=Arrow-Icon src="./Arrow 1.svg" alt="right pointing arrow"/>
+         </button>
+
+         <button class="button" onclick="userGuidesLink()">User Guides
+            <img class=Arrow-Icon src="./Arrow 1.svg" alt="right pointing arrow"/>
+         </button>
+
+    </div>
+ </div>
+
+<!-- TRON Academy Section -->
+<div class="Tron-Academy-Container-Top">
+    <h1 id="Tron-Academy">
+        TRON Academy
+    </h1>
+    <p id="Tron-Academy-Text">Welcome to the TRON Academy, where you can learn how to use the TRON application for your network services needs</p>
+</div>
+
+<!-- TRON Academy Cards -->
+<div class="cardsContainer">
+    <div class="Academy-Card">
+      <h3>TRON 101</h3>
+      <p class="cardtext"> Hands-on user-level training on how to use network automation services </p>
+      <button class="Learn-More-Button" onclick="tron101Link()">Learn More
+      </button>
+   </div>
+ 
+   <div class="Academy-Card">
+      <h3>Development</h3>
+      <p class="cardtext"> How to onboard code for broader consumption using TRON platform</p>
+      <button class="Learn-More-Button" onclick="developmentLink()">Learn More
+      </button>
+   </div>
+
+   <div class="Academy-Card">
+      <h3>TRON Admin</h3>
+      <p class="cardtext"> Advanced training on how to define new workflows using TRON tools</p>
+      <button class="Learn-More-Button" onclick="tronAdminLink()">Learn More
+      </button>
+   </div>
+</div>
+
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
